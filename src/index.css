@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .bgImg {
+    background-color: #232376;
+  }
+  .bgKeyFeature {
+    background-color: #29295e;
+  }
+  .bgLookingFor {
+    background-color: #27275f;
+  }
+}
+
+@media (min-width: 767px) {
+  body {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/hero-bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1415px;
+  }
+  .bgKeyFeature {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgLookingFor {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+}
