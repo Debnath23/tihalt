@@ -1,6 +1,10 @@
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
+  { href: "#", label: "Our Services" },
+  { href: "#", label: "Products" },
+  { href: "#", label: "Portfolio" },
+  { href: "#", label: "Blog" },
   { href: "/contact-us", label: "Contact Us" },
 ];
 
@@ -84,4 +88,111 @@ export const keyFeatures = [
     title: "RELATIONSHIP WITH CLIENTS",
     content: `The web design company must have a good relationship with their clients. Support them and handle every issue related to the applications or websites. Analyze them if they can able to give 24×7 support.`,
   },
-]
+];
+
+export const lookingForText = [
+  {
+    id: 1,
+    content: "Website Designing and Development",
+  },
+  {
+    id: 2,
+    content: "Custom Designed Websites",
+  },
+  {
+    id: 3,
+    content: "Revamping Existing Websites",
+  },
+  {
+    id: 4,
+    content: "Website Maintenance",
+  },
+  {
+    id: 5,
+    content: "Content Management System(CMS)",
+  },
+  {
+    id: 6,
+    content: "Responsive Web Design",
+  },
+  {
+    id: 7,
+    content: "Web Hosting Services",
+  },
+  {
+    id: 8,
+    content: "Take Care of Domain Name",
+  },
+  {
+    id: 9,
+    content: "eCommerce Websites Development",
+  },
+];
+
+import { faEdit } from '@fortawesome/free-solid-svg-icons'
+import { faMobilePhone } from '@fortawesome/free-solid-svg-icons'
+import { faAreaChart } from '@fortawesome/free-solid-svg-icons'
+import { faPodcast } from '@fortawesome/free-solid-svg-icons'
+import { faAudioDescription } from '@fortawesome/free-solid-svg-icons'
+import { faLineChart } from '@fortawesome/free-solid-svg-icons'
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
+import { faBarChart } from '@fortawesome/free-solid-svg-icons'
+
+export const offers = [
+  {
+    id: 1,
+    icons: faEdit,
+    title: "CONTENT MARKETING",
+    content:
+      "Content marketing is a strategy to create valuable and relevant content to attract customers to drive profitable customer action.",
+  },
+  {
+    id: 2,
+    icons: faMobilePhone,
+    title: "MOBILE MARKETING",
+    content:
+      "Mobile marketing is one kind of digital marketing to reach the audience to their mobile via websites, emails, SMS, social media and apps.",
+  },
+  {
+    id: 3,
+    icons: faAreaChart,
+    title: "ADVANCED ANALYTICS",
+    content:
+      "Advanced analytics is one of the data science methods that focus on projects future trends, events and behaviors. It gives a clear view of various aspects of the operations",
+  },
+  {
+    id: 4,
+    icons: faPodcast,
+    title: "PPC MANAGEMENT",
+    content:
+      "In PPC the Digital marketer analyses the strategy and budget. And they monitor each campaign and all keyword’s effectiveness. Just ensure PPC efforts are yielding a positive ROI.",
+  },
+  {
+    id: 5,
+    icons: faAudioDescription,
+    title: "ADS ON TARGET",
+    content:
+      "It’s one technique of online advertising model that is directed the audience based on the product or person the advertiser promoting.",
+  },
+  {
+    id: 6,
+    icons: faLineChart,
+    title: "VIRTUAL MARKETING",
+    content:
+      "Virtual marketing is a contrast to traditional marketing methods such as printing and broadcast. It’s fully an online advertisement that fully focuses on clicks, impression, hits and its easily convert the viewer as a customer.",
+  },
+  {
+    id: 7,
+    icons: faUserCircle,
+    title: "SOCIAL MEDIA SERVICES",
+    content:
+      "Our social media strategies will help to grow your business and always maintain your social presence and engage the audience in a good manner.",
+  },
+  {
+    id: 8,
+    icons: faBarChart,
+    title: "WEB ANALYTICS",
+    content:
+      "Web analytics is the collection, measurement, analysis, and reporting of web and purpose of understanding and optimizing web usage by the user.",
+  },
+];

@@ -12,9 +12,9 @@ function FeatureCard({ img, title, content }) {
       <div className="px-8 pb-[10px]">
         <p className="text-[16px] pb-5 text-[#666666] text-justify">{content}</p>
       </div>
-      <button className="border-2 w-[121px] h-[44px] mb-[30px] mx-5 rounded-full border-yellow-500 font-medium text-[#091F52] text-[13px] cursor-pointer">
-        Read More
-      </button>
+      <button className={"border-2 w-[121px] h-[44px] mb-[30px] mx-5 rounded-full border-yellow-500 font-medium text-[#091F52] text-[13px] cursor-pointer"}>
+      Read More
+    </button>
     </section>
   );
 }

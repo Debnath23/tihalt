@@ -25,6 +25,9 @@ body {
   .bgLookingFor {
     background-color: #27275f;
   }
+  .roadmap {
+    background-color: #27275f;
+  }
 }
 
 @media (min-width: 767px) {
@@ -34,6 +37,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 1415px;
+    z-index: 100;
   }
   .bgKeyFeature {
     background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg.jpg");
@@ -43,7 +47,14 @@ body {
     height: auto;
   }
   .bgLookingFor {
-    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg.jpg");
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .roadmap {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/timeline-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
