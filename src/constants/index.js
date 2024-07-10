@@ -129,14 +129,14 @@ export const lookingForText = [
   },
 ];
 
-import { faEdit } from '@fortawesome/free-solid-svg-icons'
-import { faMobilePhone } from '@fortawesome/free-solid-svg-icons'
-import { faAreaChart } from '@fortawesome/free-solid-svg-icons'
-import { faPodcast } from '@fortawesome/free-solid-svg-icons'
-import { faAudioDescription } from '@fortawesome/free-solid-svg-icons'
-import { faLineChart } from '@fortawesome/free-solid-svg-icons'
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons'
-import { faBarChart } from '@fortawesome/free-solid-svg-icons'
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faMobilePhone } from "@fortawesome/free-solid-svg-icons";
+import { faAreaChart } from "@fortawesome/free-solid-svg-icons";
+import { faPodcast } from "@fortawesome/free-solid-svg-icons";
+import { faAudioDescription } from "@fortawesome/free-solid-svg-icons";
+import { faLineChart } from "@fortawesome/free-solid-svg-icons";
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faBarChart } from "@fortawesome/free-solid-svg-icons";
 
 export const offers = [
   {
@@ -194,5 +194,90 @@ export const offers = [
     title: "WEB ANALYTICS",
     content:
       "Web analytics is the collection, measurement, analysis, and reporting of web and purpose of understanding and optimizing web usage by the user.",
+  },
+];
+
+export const InteractiveWebSolutionLinks = [
+  {
+    id: 1,
+    link: "Drupal Development",
+  },
+  {
+    id: 2,
+    link: "CMS Website Development",
+  },
+  {
+    id: 3,
+    link: "Ecommerce Website Development",
+  },
+  {
+    id: 4,
+    link: "Joomla Development",
+  },
+  {
+    id: 5,
+    link: "Responsive Web Design",
+  },
+  {
+    id: 6,
+    link: "Website Maintenance Services",
+  },
+  {
+    id: 7,
+    link: "WordPress Development",
+  },
+];
+
+export const DigitalMarketingLinks = [
+  {
+    id: 1,
+    link: "Link Building Services",
+  },
+  {
+    id: 2,
+    link: "SEO Copywriting",
+  },
+  {
+    id: 3,
+    link: "PPC Company Bangalore",
+  },
+  {
+    id: 4,
+    link: "Search Engine Marketing",
+  },
+  {
+    id: 5,
+    link: "Social Media Marketing",
+  },
+  {
+    id: 6,
+    link: "Content Writing",
+  },
+];
+
+export const SoftwareDevelopmentLinks = [
+  {
+    id: 1,
+    link: "Mobile Application Development",
+  },
+  {
+    id: 2,
+    link: "Application development",
+  },
+  {
+    id: 3,
+    link: "Interactive Application Development",
+  },
+  {
+    id: 4,
+    link: "Custom Software Development/ Maintenance",
+  },
+  {
+    id: 5,
+    link: "Enterprise solution development",
+  },
+  {
+    id: 6,
+    link: "ERP solutions & support",
   },
 ];

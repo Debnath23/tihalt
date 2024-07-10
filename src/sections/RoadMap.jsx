@@ -9,7 +9,7 @@ export default function RoadMap() {
         </div>
         <div>
             <div>
-                <p></p>
+                <p>INFORMATION GATHERING</p>
                 <div>
                     <div>
                         <p>1</p>

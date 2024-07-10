@@ -31,7 +31,7 @@ body {
 }
 
 @media (min-width: 767px) {
-  body {
+  .bgImg {
     background-image: url("https://tihalt.com/wp-content/uploads/2018/03/hero-bg-1.jpg");
     background-size: cover;
     background-position: center;
@@ -55,6 +55,13 @@ body {
   }
   .roadmap {
     background-image: url("https://tihalt.com/wp-content/uploads/2018/03/timeline-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgAbout {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/page-title-bg-3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

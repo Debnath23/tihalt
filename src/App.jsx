@@ -1,33 +1,16 @@
-import Nav from "./components/Nav";
-import Feature from "./sections/Feature";
-import Hero from "./sections/Hero";
-import KeyFeature from "./sections/KeyFeature";
-import LookingFor from "./sections/LookingFor";
-import Offers from "./sections/Offers";
-import RoadMap from "./sections/RoadMap";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
-    <main className="relative">
-      <Nav />
-      <section>
-        <Hero />
-      </section>
-      <section>
-        <Feature />
-      </section>
-      <section>
-        <KeyFeature />
-      </section>
-      <section>
-        <LookingFor />
-      </section>
-      <section>
-        <Offers />
-      </section>
-      <section>
-        <RoadMap />
-      </section>
-    </main>
+    <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
+        </Routes>
+    </Router>
   );
 }
