@@ -130,7 +130,7 @@ export const lookingForText = [
 ];
 
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
-import { faMobilePhone } from "@fortawesome/free-solid-svg-icons";
+import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import { faAreaChart } from "@fortawesome/free-solid-svg-icons";
 import { faPodcast } from "@fortawesome/free-solid-svg-icons";
 import { faAudioDescription } from "@fortawesome/free-solid-svg-icons";
@@ -148,7 +148,7 @@ export const offers = [
   },
   {
     id: 2,
-    icons: faMobilePhone,
+    icons: faMobileScreenButton,
     title: "MOBILE MARKETING",
     content:
       "Mobile marketing is one kind of digital marketing to reach the audience to their mobile via websites, emails, SMS, social media and apps.",
@@ -281,3 +281,57 @@ export const SoftwareDevelopmentLinks = [
     link: "ERP solutions & support",
   },
 ];
+
+export const numbers = [
+  {
+    id: 1,
+    num: 860,
+    text: "Satisfied Customers",
+  },
+  {
+    id: 2,
+    num: 28,
+    text: "Supported Countries",
+  },
+  {
+    id: 3,
+    num: 600,
+    text: "Delivered Projects",
+  },
+  {
+    id: 4,
+    num: 25,
+    text: "Software Products",
+  },
+]
+
+import { faEarthAfrica } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faDollar } from "@fortawesome/free-solid-svg-icons";
+
+export const features2 = [
+  {
+    id: 1,
+    icon: faEarthAfrica,
+    title: "BEST TARGET",
+    content: "We Quickly generate exceptional Web Solutions via client-based architectures."
+  },
+  {
+    id: 2,
+    icon: faUsers,
+    title: "BEST SUPPORT",
+    content: "We have in-house support team and tools to manage the different phases of services."
+  },
+  {
+    id: 3,
+    icon: faMobileScreenButton,
+    title: "CLASSIC SERVICE",
+    content: "Our team is dedicated to providing the best Service in all aspects of the Project Scope."
+  },
+  {
+    id: 4,
+    icon: faDollar,
+    title: "VALUE OF MONEY",
+    content: "The Service and Support make you feel the Value for your Money and Time."
+  },
+]
