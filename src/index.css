@@ -92,6 +92,14 @@ body {
     background-repeat: no-repeat;
     height: auto;
   }
+  .bgContactUs {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/bg-portfolio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+  }
 }
 
 @media (min-width: 767px) {
@@ -158,5 +166,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 1000px;
+  }
+  .bgContactUs {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/bg-portfolio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
   }
 }
