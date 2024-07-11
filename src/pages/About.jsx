@@ -3,24 +3,23 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Wedge from "../components/Wedge";
 import CountUp from "react-countup";
-import { features2, numbers } from "../constants";
+import { carouselContent, clients, features2, numbers } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Autoplay from "embla-carousel-autoplay"
- 
-import { Card, CardContent } from "../components/ui/card"
+import Autoplay from "embla-carousel-autoplay";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../components/ui/carousel"
+} from "../components/ui/carousel";
 
 function About() {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+  );
   return (
     <main className="relative">
       <Nav />
@@ -178,29 +177,43 @@ function About() {
           ))}
         </div>
 
-        <div>
-        <Carousel
-      plugins={[plugin.current]}
-      className="w-full max-w-xs"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
-    >
-      <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
-            <div className="p-1">
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+        <div className="bgClient py-16">
+          <div className="flex justify-center items-center py-12">
+          <div className="w-[1px] h-8 bg-white"></div></div>
+          <p className="text-center text-[15px] font-bold text-white pb-4">OUR CLIENTS</p>
+          <p className="text-center text-[16px] text-[#73BAE3]">THANKS TO OUR VALUABLE CLIENTS WHO MADE IT HAPPEN</p>
+          <div className="md:grid md:grid-cols-4 py-12 px-20">
+            {
+              clients.map((item) => (
+                <div key={item.id} className="px-4 pb-7">
+                  <img src={item.img} alt="img" width={264} height={95} />
+                </div>
+              ))
+            }
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-center items-center pt-8 pb-28 max-sm:mx-16">
+          <h1 className="text-[28px] text-[#343434] font-bold text-center mb-24">TESTIMONIALS</h1>
+          <Carousel
+            plugins={[plugin.current]}
+            className="w-full max-w-[1200px] mb-12"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+          >
+            <CarouselContent>
+              {carouselContent.map((item) => (
+                <CarouselItem key={item.id} className="w-full">
+                  <div className="">
+                    <p className="text-[#3B3B3B] text-[17px] font-bold pb-4">{item.title}</p>
+                    <p className="text-[#707070] text-[15px]">{item.content}</p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
       <Wedge />

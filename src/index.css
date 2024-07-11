@@ -19,7 +19,7 @@ body {
   .bgImg {
     background-color: #232376;
   }
-  .bgKeyFeature {
+  /* .bgKeyFeature {
     background-color: #29295e;
   }
   .bgLookingFor {
@@ -27,6 +27,70 @@ body {
   }
   .roadmap {
     background-color: #27275f;
+  } */
+  /* .bgImg {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/hero-bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1415px;
+    z-index: 100;
+  } */
+  .bgKeyFeature {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgLookingFor {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-about-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .roadmap {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/timeline-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgAbout {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/page-title-bg-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgDigitalWeb {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgDigitalWeb2 {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/shutterstock_190470197.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgNumbers {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/map-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgClient {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/bg-blog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
   }
 }
 
@@ -66,5 +130,33 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
+  }
+  .bgDigitalWeb {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/half-service-bg-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgDigitalWeb2 {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/shutterstock_190470197.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .bgNumbers {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/map-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 454.32px;
+  }
+  .bgClient {
+    background-image: url("https://tihalt.com/wp-content/uploads/2018/03/bg-blog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1000px;
   }
 }

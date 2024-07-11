@@ -1,3 +1,4 @@
+import Wedge from "@/components/Wedge";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import Feature from "../sections/Feature";
@@ -13,7 +14,7 @@ function Home() {
   return (
     <main className="relative">
       <Nav />
-      <section>
+      <section className="z-[1]">
         <Hero />
       </section>
       <section>
@@ -34,6 +35,7 @@ function Home() {
       <section>
         <Info />
       </section>
+      <Wedge />
       <Footer />
     </main>
   )

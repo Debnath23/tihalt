@@ -303,7 +303,7 @@ export const numbers = [
     num: 25,
     text: "Software Products",
   },
-]
+];
 
 import { faEarthAfrica } from "@fortawesome/free-solid-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
@@ -314,24 +314,230 @@ export const features2 = [
     id: 1,
     icon: faEarthAfrica,
     title: "BEST TARGET",
-    content: "We Quickly generate exceptional Web Solutions via client-based architectures."
+    content:
+      "We Quickly generate exceptional Web Solutions via client-based architectures.",
   },
   {
     id: 2,
     icon: faUsers,
     title: "BEST SUPPORT",
-    content: "We have in-house support team and tools to manage the different phases of services."
+    content:
+      "We have in-house support team and tools to manage the different phases of services.",
   },
   {
     id: 3,
     icon: faMobileScreenButton,
     title: "CLASSIC SERVICE",
-    content: "Our team is dedicated to providing the best Service in all aspects of the Project Scope."
+    content:
+      "Our team is dedicated to providing the best Service in all aspects of the Project Scope.",
   },
   {
     id: 4,
     icon: faDollar,
     title: "VALUE OF MONEY",
-    content: "The Service and Support make you feel the Value for your Money and Time."
+    content:
+      "The Service and Support make you feel the Value for your Money and Time.",
   },
-]
+];
+
+export const carouselContent = [
+  {
+    id: 1,
+    title: "DINESH BHASKARAN",
+    content:
+      "With a passionate and client-friendly team, Tihalt technologies try to cover every milestone when it comes to providing solutions for commercial web design. It takes into account all aspects of web design to its performance. Their collaboration with me being a client and the willingness to support is something to be appreciated.",
+  },
+  {
+    id: 2,
+    title: "ANISH KUMAR",
+    content:
+      "I personally appreciate the creative work and enthusiasm of the young team of Tihalt web design and development company in Bangalore. They offer superb web design services and digital marketing services that too at a pocket friendly price. Highly recommended.",
+  },
+  {
+    id: 3,
+    title: "KARTHIK RAJA",
+    content:
+      "Tihalt Technologies efficiently delivered our website design in 7 days. Commendable work. Their content marketing-driven SEO service is working within some months. This note is our token of appreciation for all their good work.",
+  },
+  {
+    id: 4,
+    title: "BIJU",
+    content:
+      "There is a lot that goes into building a website, we learned recently working with Tihalt. Tihalt Technologies handled each aspect professionally. Writing, designing, and online marketing. Excellent team & good service.",
+  },
+  {
+    id: 5,
+    title: "VIBIN RAJ",
+    content:
+      "Very dynamic and young talents group leads the company and they give the best at any cost. The surprise is they follow all design principles in spite of being a startup. The major advantage I gained here is the time where you can get the complete product in minimal time. Next comes the digital marketing where they enlightened my product to the next level.",
+  },
+  {
+    id: 6,
+    title: "RAJ MOHAN",
+    content:
+      "One of the best web designing company in Bangalore. They were delivered the project before the deadline with 100% accuracy(what we are expected). Reasonable price and between times they are responsible also so good. Strongly recommended to all for ur works.",
+  },
+];
+
+export const clients = [
+  {
+    id: 1,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/22.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 2,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/1.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 3,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/02/fulora.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 4,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/30.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 5,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/02/rocket.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 6,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/33.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 7,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/02/nutri.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 8,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/02/eslate.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 9,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/9.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 10,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/5.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 11,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/3.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 12,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/6.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 13,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/32.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 14,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/4.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 15,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/41.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 16,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/7.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 17,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/velamal-Engineering-college.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 18,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/Fazz-Cars.png?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 19,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/16.jpg?fit=264%2C95&ssl=1",
+  },
+  {
+    id: 20,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/6.jpg?fit=264%2C95&ssl=1",
+  },
+  // {
+  //   id: 21,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/7.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 22,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/Velammal-Education.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 23,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/35.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 24,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/10.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 25,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/28.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 26,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/31.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 27,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/AIM-Education.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 28,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/Anna-Adarsh.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 29,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/06/8.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 30,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/42.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 31,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/Cybersafe-US.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 32,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/E-Bike-Go.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 33,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/24.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 34,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/Mavrick-Productions.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 35,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/3.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 36,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2022/11/Neural-Garage.png?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 37,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/25.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 38,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/1.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 39,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/18.jpg?fit=264%2C95&ssl=1",
+  // },
+  // {
+  //   id: 40,
+  //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/8.jpg?fit=264%2C95&ssl=1",
+  // },
+];
