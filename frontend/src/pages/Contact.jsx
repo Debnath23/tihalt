@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Wedge from "@/components/Wedge";
 import { offices } from "@/constants";
+import InfoForm from "@/components/InfoForm";
 
 function Contact() {
   return (
@@ -59,7 +60,7 @@ function Contact() {
           </div>
         </div>
 
-        <section className="bg-[#f3f3f3] md:flex md:px-[100px] justify-center py-16 px-8">
+        {/* <section className="bg-[#f3f3f3] md:flex md:px-[100px] justify-center py-16 px-8">
           <div className="flex flex-col justify-center items-center md:w-1/2 w-full">
             <div className="md:px-5 pb-[30px] flex flex-col justify-center items-center">
               <h2 className="text-[39px] text-[#383838] font-semibold">
@@ -117,7 +118,9 @@ function Contact() {
               <button type="submit">Submit</button>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <InfoForm />
 
         <div className="md:grid md:grid-cols-3 md:gap-20 md:px-[140px] py-24 px-16">
           {offices.map((item) => (
