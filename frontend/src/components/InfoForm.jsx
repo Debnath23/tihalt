@@ -1,4 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "./ui/alert-dialog";
+import { Button } from "./ui/button";
 
 export default function InfoForm() {
   const [fullname, setFullname] = useState("");
@@ -6,6 +18,7 @@ export default function InfoForm() {
   const [number, setNumber] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const baseUrl = "http://localhost:8000";
 
@@ -25,18 +38,15 @@ export default function InfoForm() {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-    })
-      .then((res) => {
-        console.log(res);
-        if (res.status > 199 && res.status < 300) {
-          alert("Send Successfully !");
-        }
-      });
+    });
 
-      return (
-        <div>Form Submitted Successfully!</div>
-      )
+    if (res.status >= 200 && res.status < 300) {
+      setIsSubmitted(true);
+    } else {
+      alert("Failed to send. Please try again.");
+    }
   };
+
   return (
     <section className="bg-[#f3f3f3] md:flex md:px-[100px] justify-center py-16 px-8">
       <div className="flex flex-col justify-center items-center md:w-1/2 w-full">
@@ -54,8 +64,8 @@ export default function InfoForm() {
         <div className="md:grid md:grid-cols-2 gap-4 w-full">
           <div className="px-[7px] mb-[14px]">
             <input
-            id='fullname'
-            name='fullname'
+              id="fullname"
+              name="fullname"
               type="text"
               placeholder="Full Name*"
               required
@@ -65,8 +75,8 @@ export default function InfoForm() {
           </div>
           <div className="px-[7px] mb-[14px]">
             <input
-            id='email'
-            name='email'
+              id="email"
+              name="email"
               type="email"
               placeholder="Email*"
               required
@@ -76,8 +86,8 @@ export default function InfoForm() {
           </div>
           <div className="px-[7px] mb-[14px]">
             <input
-            id='number'
-            name='number'
+              id="number"
+              name="number"
               type="number"
               placeholder="Phone Number*"
               required
@@ -87,8 +97,8 @@ export default function InfoForm() {
           </div>
           <div className="px-[7px] mb-[14px]">
             <input
-            id='subject'
-            name='subject'
+              id="subject"
+              name="subject"
               type="text"
               placeholder="Subject*"
               required
@@ -99,15 +109,34 @@ export default function InfoForm() {
         </div>
         <div className="w-full px-[7px] mb-[14px]">
           <textarea
-          id='message'
+            id="message"
             name="message"
             placeholder="Message*"
             className="w-full h-[120px] py-[18px] px-[22px]"
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
-        <div className="bg-[#233C85] text-white mx-2 mt-4 w-full h-[51px] flex justify-center items-center">
-          <button type="submit" onClick={() => sendEmail()}>Submit</button>
+        <div className="bg-[#233C85] text-white mx-2 mt-4 w-full h-[51px] flex justify-center items-center hover:bg-slate-700">
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <button type="submit" onClick={sendEmail}>
+                Submit
+              </button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>
+                  Form Submitted Successfully!
+                </AlertDialogTitle>
+                <AlertDialogDescription>
+                  Thank you for your submission. We will get back to you soon.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogAction>OK</AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       </div>
     </section>
