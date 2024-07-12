@@ -1,11 +1,42 @@
-import React from 'react';
-import { useForm } from '@formspree/react';
+import React, { useState } from 'react';
 
 export default function InfoForm() {
-    const [state, handleSubmit] = useForm("xgvwvopk");
-  if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
-  }
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const baseUrl = "http://localhost:8000";
+
+  const sendEmail = async () => {
+    let dataSend = {
+      fullname: fullname,
+      email: email,
+      number: number,
+      subject: subject,
+      message: message,
+    };
+
+    const res = await fetch(`${baseUrl}/email/sendEmail`, {
+      method: "POST",
+      body: JSON.stringify(dataSend),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        if (res.status > 199 && res.status < 300) {
+          alert("Send Successfully !");
+        }
+      });
+
+      return (
+        <div>Form Submitted Successfully!</div>
+      )
+  };
   return (
     <section className="bg-[#f3f3f3] md:flex md:px-[100px] justify-center py-16 px-8">
       <div className="flex flex-col justify-center items-center md:w-1/2 w-full">
@@ -20,7 +51,6 @@ export default function InfoForm() {
         <div className="flex justify-center items-center pb-[50px] mb-[30px]">
           <div className="border-[0.8px] w-[40px] border-[#2b2b2b]"></div>
         </div>
-        <form onSubmit={handleSubmit}>
         <div className="md:grid md:grid-cols-2 gap-4 w-full">
           <div className="px-[7px] mb-[14px]">
             <input
@@ -30,6 +60,7 @@ export default function InfoForm() {
               placeholder="Full Name*"
               required
               className="px-[22px] py-[15px] w-full h-[55.5px]"
+              onChange={(e) => setFullname(e.target.value)}
             />
           </div>
           <div className="px-[7px] mb-[14px]">
@@ -40,6 +71,7 @@ export default function InfoForm() {
               placeholder="Email*"
               required
               className="px-[22px] py-[15px] w-full h-[55.5px]"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="px-[7px] mb-[14px]">
@@ -50,6 +82,7 @@ export default function InfoForm() {
               placeholder="Phone Number*"
               required
               className="px-[22px] py-[15px] w-full h-[55.5px]"
+              onChange={(e) => setNumber(e.target.value)}
             />
           </div>
           <div className="px-[7px] mb-[14px]">
@@ -60,6 +93,7 @@ export default function InfoForm() {
               placeholder="Subject*"
               required
               className="px-[22px] py-[15px] w-full h-[55.5px]"
+              onChange={(e) => setSubject(e.target.value)}
             />
           </div>
         </div>
@@ -69,12 +103,12 @@ export default function InfoForm() {
             name="message"
             placeholder="Message*"
             className="w-full h-[120px] py-[18px] px-[22px]"
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
         </div>
         <div className="bg-[#233C85] text-white mx-2 mt-4 w-full h-[51px] flex justify-center items-center">
-          <button type="submit" disabled={state.submitting}>Submit</button>
+          <button type="submit" onClick={() => sendEmail()}>Submit</button>
         </div>
-        </form>
       </div>
     </section>
   );

@@ -140,7 +140,7 @@ function Nav() {
         </div>
       </header> */}
 
-      <header className="flex fixed h-[125px] top-0 left-0 w-full z-[100]">
+      <header className="flex fixed h-[125px] top-0 left-0 w-full z-10">
         <div className="w-full">
           <div className="md:flex justify-between items-center w-full py-4 px-4 bg-[#222222] text-white">
             <div className="flex max-sm:justify-center items-center gap-1">
@@ -176,7 +176,7 @@ function Nav() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center md:px-[124px] max-sm:px-4 py-[32px] bg-black text-white">
+          <div className="flex justify-between items-center lg:px-[124px] max-sm:px-4 py-[32px] bg-black text-white">
             <div>
               <img
                 src="https://i0.wp.com/tihalt.com/wp-content/uploads/2019/04/logo.png?fit=106%2C25&ssl=1"
@@ -185,12 +185,12 @@ function Nav() {
               />
             </div>
             <div className="flex gap-4">
-              <ul className="flex-1 flex justify-center items-center gap-8 max-lg:hidden">
+              <ul className="flex-1 flex justify-center items-center lg:gap-8 gap-2  max-md:hidden">
                 {navLinks.map((item) => (
                   <li key={item.label}>
                     <a
                       href={item.href}
-                      className="font-montserrat leading-normal text-lg text-slate-100 hover:underline underline-offset-8"
+                      className="font-montserrat leading-normal lg:text-lg text-sm text-slate-100 hover:underline underline-offset-8"
                     >
                       {item.label}
                     </a>
@@ -198,35 +198,8 @@ function Nav() {
                 ))}
               </ul>
               <div className="flex items-center md:gap-4 max-sm:gap-2">
-                <FontAwesomeIcon icon={faSearch} width={14} height={13} />
-                <div className="border-2 border-white px-2 md:hidden">
-                  <Sheet>
-                    <SheetTrigger asChild>
-                      <FontAwesomeIcon icon={faBars} width={13} height={16} />
-                    </SheetTrigger>
-                    <SheetContent className="w-[300px] bg-black text-white">
-                      <SheetHeader>
-                        <SheetTitle>Navigation</SheetTitle>
-                      </SheetHeader>
-                      <div className="flex flex-col space-y-4">
-                        {navLinks.map((item) => (
-                          <a
-                            key={item.label}
-                            href={item.href}
-                            className="font-montserrat leading-normal text-lg text-slate-100 hover:underline underline-offset-8"
-                          >
-                            {item.label}
-                          </a>
-                        ))}
-                      </div>
-                      <SheetFooter className="mt-4">
-                        <SheetClose asChild>
-                          <Button type="button">Close</Button>
-                        </SheetClose>
-                      </SheetFooter>
-                    </SheetContent>
-                  </Sheet>
-                </div>
+                <FontAwesomeIcon icon={faSearch} width={14} height={13} className="max-sm:pr-12" />
+
                 <div className="border-[1px] border-[#ffffff] h-4 max-sm:hidden"></div>
                 <div className="text-white text-[11px] px-[15px] py-2 bg-[#EEAE20] mx-2 rounded-sm max-sm:hidden">
                   <p>
@@ -238,6 +211,34 @@ function Nav() {
           </div>
         </div>
       </header>
+      <div className="border-2 border-white px-2 md:hidden z-20 text-white top-32 right-4 fixed">
+        <Sheet>
+          <SheetTrigger asChild>
+            <FontAwesomeIcon icon={faBars} width={13} height={16} />
+          </SheetTrigger>
+          <SheetContent className="w-[300px] bg-black text-white">
+            <SheetHeader>
+              <SheetTitle>Navigation</SheetTitle>
+            </SheetHeader>
+            <div className="flex flex-col space-y-4">
+              {navLinks.map((item) => (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="font-montserrat leading-normal text-lg text-slate-100 hover:underline underline-offset-8"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+            <SheetFooter className="mt-4">
+              <SheetClose asChild>
+                <Button type="button">Close</Button>
+              </SheetClose>
+            </SheetFooter>
+          </SheetContent>
+        </Sheet>
+      </div>
     </>
   );
 }

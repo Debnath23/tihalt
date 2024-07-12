@@ -4,7 +4,7 @@ import { features } from "../constants/index";
 
 function Feature() {
   return (
-    <section className="md:grid md:grid-cols-4 md:px-[120px] pb-[40px] max-sm:pl-12">
+    <section className="md:grid md:grid-cols-2 lg:gap-16 lg:grid-cols-4 md:px-[120px] lg:px-[60px] pb-[40px] max-sm:pl-12">
       {features.map((item) => (
         <div key={item.id}>
           <FeatureCard
