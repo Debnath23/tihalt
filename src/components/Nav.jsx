@@ -238,7 +238,6 @@ function Nav() {
           </div>
         </div>
       </header>
-
     </>
   );
 }

@@ -541,3 +541,72 @@ export const clients = [
   //   img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2019/10/8.jpg?fit=264%2C95&ssl=1",
   // },
 ];
+
+export const offices = [
+  {
+    id: 1,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/india-e1580738614181.png?fit=40%2C27&ssl=1",
+    title: "India",
+    content: "No. 32, 38/1, 2nd Floor, Sri Ram Arcade, Near Bosch Office, Hosur Main Road, Bommanahalli, Bengaluru, Karnataka 560068."
+  },
+  {
+    id: 2,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/india-e1580738614181.png?fit=40%2C27&ssl=1",
+    title: "India",
+    content: "No.1300, 13th Cross, Indira Nagar,Bangalore – 560008."
+  },
+  {
+    id: 3,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/india-e1580738614181.png?fit=40%2C27&ssl=1",
+    title: "India",
+    content: "Software Technology Parks of India, Ministry of Comm. & IT, Govt. of India, Nehru Nagar (East), Bhilai, Chhattisgarh – 490020"
+  },
+  {
+    id: 4,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/india-e1580738614181.png?fit=40%2C27&ssl=1",
+    title: "India",
+    content: "TOF -17 & 18, Surya Treasure Island Mall, Junwani Road, Bhilai, Chhattisgarh – 490020"
+  },
+  {
+    id: 5,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/india-e1580738614181.png?fit=40%2C27&ssl=1",
+    title: "India",
+    content: "Katare Complex, Luchki Para ,Drug, Chhattisgarh -491001"
+  },
+  {
+    id: 6,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/india-e1580738614181.png?fit=40%2C27&ssl=1",
+    title: "India",
+    content: "L-502/503 MegaCenter, Hadapsar, Pune, India"
+  },
+  {
+    id: 7,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/dubai-e1580738787182.png?fit=54%2C27&ssl=1",
+    title: "Dubai",
+    content: "3 Office 319 Al Kazim Building Hor Al Anz East Near Atrium Medical Care, Al Ittihad Road, Khubaisi, Dubai."
+  },
+  {
+    id: 8,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2023/04/scotland-e1580738826754-1.png?fit=45%2C27&ssl=1",
+    title: "UK",
+    content: "CBS Information Systems Ltd. 5, The Arena Stockley Park, Uxbridge, UB11 1AA, UK"
+  },
+  {
+    id: 9,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2020/02/scotland-e1580738826754.png?fit=45%2C27&ssl=1",
+    title: "Scotland",
+    content: "Westpoint 4 Redheughs Rigg South Gyle Edinburgh EH12 9DQ, United Kingdom."
+  },
+  {
+    id: 10,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2023/04/usa.png?fit=45%2C27&ssl=1",
+    title: "USA",
+    content: "Central Business Solutions Inc.37600 Central Ct, Ste 214, Newark, CA 94560 USA"
+  },
+  {
+    id: 11,
+    img: "https://i0.wp.com/tihalt.com/wp-content/uploads/2023/04/canada.png?fit=45%2C27&ssl=1",
+    title: "Canada",
+    content: "CBS Information Systems Inc.185-911 YATES STREET # 352 VICTORIA British Columbia V8V 4Y9, Canada"
+  },
+]
